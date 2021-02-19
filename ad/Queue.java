@@ -26,8 +26,6 @@ public class Queue{
 	public void dequeue(){
 		if(!isEmpty()){
 			int x = q[head];
-			System.out.println("Value: " + x);
-			System.out.println("test");
 			if (head < q.length)
 				head++;
 			else
