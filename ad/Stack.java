@@ -2,8 +2,8 @@ package ad;
 
 public class Stack{
 	private int top;
-	private int MAX = 10;
-	private int a[] = new int[10];
+	private int MAX = 3;
+	private int a[] = new int[4];
 
 	public Stack(){
 		top = -1;
@@ -14,15 +14,15 @@ public class Stack{
 	}
 
 	public void push(int x){
-		if(top >= MAX-1)
-			System.out.println("Stack Overflow");
+		if(top >= MAX)
+			System.out.println("Overflow");
 		else	
 			a[++top] = x;
 	}
 
 	public void pop(){
 		if(top < 0)
-			System.out.println("error: underflow");
+			System.out.println("Underflow");
 		else
 			top--;
 	}

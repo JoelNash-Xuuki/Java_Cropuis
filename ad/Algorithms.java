@@ -35,7 +35,7 @@ public class Algorithms{
 		}
 	}
 
-	public void getSortlength(){
+	public void getSortLength(){
 		for(int j = 0; j<a.length; j++){
 			System.out.print(a[j] + " ");
 		}
@@ -87,10 +87,10 @@ public class Algorithms{
 		for(n = 0; n < a.length; n++){
 			if(a[n] > max)
 				max = a[n];
-				System.out.println("Max value: " + max);
 		}
+		System.out.println(max);
 	}
-
+	//change to min
 	public void max(int[] a){
 		int max = 0;
 		for(n = 0; n < a.length; n++){
